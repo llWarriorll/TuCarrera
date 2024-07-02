@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+    <script src="{% static 'js/animscroll.js' %}"></script>
+    <!-- Header -->
+    <header>
+        <img src="{% static 'images/LOGOS.png' %}" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Carrera universitaria</a></li>
+                <li><a href="#conoce-los-temas">Conoce los temas</a></li>
+                <li><a href="/aboutprogram/">Acerca del programa</a></li>
+            </ul>
+        </nav>
+        <a href="/signup/"><img src="{% static 'images/iniciar_sesion.png' %}" alt="Boton-iniciar" class="login-btn"></a>
+    </header>
+
+    <div class="division"></div>
+
+    <!-- Imagen con el titulo -->
+    <section class="info-section">
+        <img src="{% static 'images/CONTIGO.png' %}" alt="Imagen de fondo" class="info-image">
+    </section>
+
+    <div class="division"></div>
+
+    <div class="carrera-title">
+        <h1>Tu Carrera Universitaria</h1>
+    </div>
+
+    <div class="division"></div>
+
+    <!-- Imagen interactiva -->
+    <main>
+        <section>
+            <img class="carrera-imagen" src="{% static 'images/MAPA.png' %}" alt="Imagen de la carrera">
+        </section>
+    </main>
+
+    <div class="division"></div>
+
+    <div class="carrera-title">
+        <h1 id="conoce-los-temas">Conoce los temas</h1>
+    </div>
+
+    <section class="topics">
+        <div class="topic">
+            <img src="{% static 'images/BOTONES-01.png' %}" alt="Etapa 1 - Mis Intereses">
+        </div>
+        <div class="topic">
+            <img src="{% static 'images/BOTONES-02.png' %}" alt="Etapa 2 - Mis Talentos">
+        </div>
+        <div class="topic">
+            <img src="{% static 'images/BOTONES-03.png' %}" alt="Etapa 3 - Mis Apoyos">
+        </div>
+        <div class="topic">
+            <img src="{% static 'images/BOTONES-04.png' %}" alt="Etapa 4 - Mi Universidad">
+        </div>
+        <div class="topic">
+            <img src="{% static 'images/BOTONES-05.png' %}" alt="Etapa 5 - Mi Entorno">
+        </div>
+        <div class="topic">
+            <img src="{% static 'images/BOTONES-06.png' %}" alt="Etapa 6 - ¡Quiero Más!">
+        </div>
+        <div class="topic">
+            <img src="{% static 'images/BOTONES-07.png' %}" alt="Etapa 7 - Mi Plan de Carrera">
+        </div>
+    </section>
+
+</body>
+</html>
