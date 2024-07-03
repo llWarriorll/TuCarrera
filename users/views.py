@@ -5,32 +5,58 @@ from django.contrib.auth import login, logout, authenticate
 from django.db import IntegrityError
 from django.contrib.auth.decorators import login_required, user_passes_test
 
+
+from .models import Profile
+
 # Create your views here.
 
 def signup(request):
-    
     if request.method == 'GET':
         return render(request, 'signup.html')
     else:
         if request.POST['password1'] == request.POST['password2']:
-            #register user
+            # Register user
             try:
-                user = User.objects.create_user(username=request.POST['email'],
-                password=request.POST['password1'])
+                user = User.objects.create_user(
+                    username=request.POST['email'],
+                    password=request.POST['password1']
+                )
+                user.email = request.POST['email']
                 user.save()
+
+                # Create user profile
+                profile = Profile(
+                    user=user,
+                    apellido_paterno=request.POST['apellidoPaterno'],
+                    apellido_materno=request.POST['apellidoMaterno'],
+                    nombres=request.POST['nombres'],
+                    fecha_nacimiento=request.POST['fechaNacimiento'],
+                    lugar_nacimiento=request.POST['lugarNacimiento'],
+                    curp=request.POST['curp'],
+                    municipio=request.POST['municipio'],
+                    localidad=request.POST['localidad'],
+                    telefono=request.POST['telefono'],
+                    bachillerato=request.POST['bachillerato'],
+                    matricula=request.POST['matricula']
+                )
+                profile.save()
                 login(request, user)
                 return redirect('homeuser')
             except IntegrityError:
-                return render(request, 'signup.html',{
+                return render(request, 'signup.html', {
                     "error": 'Email Already Exist'
                 })
-        return render(request, 'signup.html',{
-                    "error": 'Password do not match'
-                })
+        return render(request, 'signup.html', {
+            "error": 'Passwords do not match'
+        })
 
 @login_required
 def homeuser(request):
-    return render(request, 'homeuser.html')
+    profile = request.user.profile  # Asumiendo que el perfil está relacionado con el usuario
+    context = {
+        'profile': profile
+    }
+    return render(request, 'homeuser.html', context)
 
 @user_passes_test(lambda u: u.is_superuser, login_url='/permission-denied/')
 def homeadmin(request):

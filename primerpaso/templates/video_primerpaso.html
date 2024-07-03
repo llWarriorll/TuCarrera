@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="{% static 'css/video_paso1.css' %}">
+</head>
+<body>
+    <header>
+        <img src="{% static 'images/LOGOS.png' %}" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Conoce los temas</a></li>
+                <li><a href="#contact">Acerca del programa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="video-container">
+            <h2 class="video-title">Título del Video</h2>
+            <video id="video" controls>
+                <source src="ruta/a/tu/video.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
+        <div class="controls-container">
+            <!-- Aquí puedes agregar otros controles para el video -->
+        </div>
+    </div>
+
+    <div class="navigation-buttons">
+        <a href="/presentacion-primer-paso" class="btn back-button">Regresar</a>
+        <a href="/formato-primer-paso" class="btn continue-button">Continuar</a>
+    </div>
+</body>
+</html>

@@ -1,18 +1,128 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Users</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="/logout">Logout</a>
-            </li>
-        </ul>
-    </nav>
-    <h1>Home Users</h1>
+    <!-- Header -->
+    <header>
+        <img src="{% static 'images/LOGOS.png' %}" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Carrera universitaria</a></li>
+                <li><a href="#services">Conoce los temas</a></li>
+                <li><a href="#contact">Acerca del programa</a></li>
+            </ul>
+        </nav>
+        <a href="/logout">
+            <button class="login-btn">Cerrar Sesión</button>
+        </a>
+    </header>
+
+    <!-- Imagen con el titulo -->
+    <section class="info-section">
+        <img src="{% static 'images/Ejemplo2.png' %}" alt="Imagen de fondo" class="info-image">
+        <div class="info-title">
+            <h1>Contigo, tu carrera universitaria</h1>
+        </div>
+    </section>
+
+    <!-- Acerca del programa -->
+    <section class="container-content">
+        <h1>Bienvenido, {{ profile.nombres }}</h1>
+        <h2>Conoce acerca del programa</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Illo impedit nisi, optio molestias veritatis omnis modi
+            consequuntur accusantium nobis pariatur hic repellendus?
+            Libero iste incidunt est nesciunt excepturi? Delectus,
+            exercitationem.</p>
+    </section>
+
+    <!-- Imagen interactiva -->
+    <main>
+        <section class="container-content">
+            <h2>Tu carrera</h2>
+            <img src="{% static 'images/TuCarrera.png' %}" alt="Imagen de la carrera">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestias aperiam maxime pariatur totam officiis voluptas. Assumenda nihil velit commodi minus, vel, adipisci perspiciatis recusandae eveniet asperiores ullam, soluta voluptate?</p>
+        </section>
+    </main>
+
+    <!-- Sección de Conoce los Temas -->
+    <section class="topics-section">
+        <div class="topics-title">
+            <h2>Conoce los temas</h2>
+        </div>
+        <div class="topics-container">
+
+            <div class="topic">
+                <a href="/Mis intereses P1/mis_intereses_s1.html">
+                    <img src="{% static 'images/BOTONES-01.png' %}" alt="Etapa 1 - Mis Intereses">
+                </a>
+            </div>
+
+            <div class="topic">
+                <a href="/Mis talentos P2/mis_talentos_s1.html">
+                    <img src="{% static 'images/BOTONES-02.png' %}" alt="Etapa 2 - Mis Talentos">
+                </a>
+            </div>
+
+            <div class="topic">
+                <a href="/Mi entorno P3/mi_entorno_s1.html">
+                    <img src="{% static 'images/BOTONES-03.png' %}" alt="Etapa 3 - Mis Apoyos">
+                </a>
+            </div>
+
+            <div class="topic">
+                <a href="/Mi universidad P4/mi_universidad_s1.html">
+                    <img src="{% static 'images/BOTONES-04.png' %}" alt="Etapa 4 - Mi Universidad">
+                </a>    
+            </div>
+
+
+            <div class="topic">
+                <a href="/Mis apoyos P5/mis_apoyos_s1.html">
+                    <img src="{% static 'images/BOTONES-05.png' %}" alt="Etapa 5 - Mi Entorno">
+                </a>
+            </div>
+
+
+            <div class="topic">
+                <a href="/Quiero mas P6/quiero_mas_s1.html">
+                    <img src="{% static 'images/BOTONES-06.png' %}" alt="Etapa 6 - ¡Quiero Más!">
+                </a>
+            </div>
+
+
+            <div class="topic">
+                <a href="/Mi plan de carrera P7/mi_plan_s1.html">
+                    <img src="{% static 'images/BOTONES-07.png' %}" alt="Etapa 7 - Mi Plan de Carrera">
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact-info container">
+        <div class="contact-details">
+            <h2>Contacto</h2>
+            <p><strong>Email:</strong> educacion@queretaro.gob.mx</p>
+            <p><strong>Teléfono:</strong> ( 442 ) 2385-000</p>
+            <p><strong>Dirección:</strong> Av. Prolongación Luis Pasteur #23 Centro Histórico. Querétaro 76000</p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.886852775541!2d-100.39169578988825!3d20.592677802535473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d344fa828fd2b1%3A0x88bd6c0390803f0c!2sSecretar%C3%ADa%20de%20Educaci%C3%B3n!5e0!3m2!1sen!2smx!4v1716010729140!5m2!1sen!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; PODER EJECUTIVO DEL ESTADO DE QUERÉTARO Copyrights © 2024 Derechos Reservados.</p>
+    </footer>
 </body>
 </html>

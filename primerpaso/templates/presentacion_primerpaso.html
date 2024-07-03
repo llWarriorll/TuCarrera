@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación</title>
+    <link rel="stylesheet" href="{% static 'css/presentacion_paso1.css'%}">
+</head>
+<body>
+    <header>
+        <img src="{% static 'images/LOGOS.png' %}" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Conoce los temas</a></li>
+                <li><a href="#contact">Acerca del programa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="presentation-container">
+            <h2 class="presentation-title">Título de la Presentación</h2>
+            <iframe src="" width="900" height="600"></iframe>
+        </div>
+        <div class="controls-container">
+            <!-- Aquí puedes agregar otros controles para la presentación -->
+        </div>
+    </div>
+
+    <div class="navigation-buttons">
+        <a href="/imagen-primer-paso" class="btn back-button">Regresar</a>
+        <a href="/video-primer-paso" class="btn continue-button">Continuar</a>
+    </div>
+</body>
+</html>
