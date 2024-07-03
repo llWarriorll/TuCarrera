@@ -1,0 +1,193 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+}
+
+/* Estilos del header */
+header {
+    background-color: #242B57;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .logo {
+    width: 350px;
+    margin-left: 30px;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 30px;
+}
+
+header nav ul li:hover {
+    transition: transform 0.3s;
+    transform: scale(1.05);
+    color: azure;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.login-btn {
+    background-color: #ffffff;
+    color: #242B57;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.login-btn:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.info-section {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.info-image {
+    width: 1500px;
+    height: 250px;
+}
+
+.info-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.info-title h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.container-content {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container-content p {
+    font-size: 16px;
+}
+
+/* Estilos para los recuadros de Conoce los Temas */
+.topics-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.topics-title {
+    margin-bottom: 20px;
+}
+
+.topics-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.topic {
+    flex: 1 1 20%; /* Cambiado de 30% a 20% */
+    max-width: 20%; /* Cambiado de 30% a 20% */
+    background-color: #ffffff;
+    padding: 10px; /* Puedes ajustar el padding según sea necesario */
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.topic:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.topic img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px;
+}
+
+.contact-details {
+    width: 45%;
+}
+
+.contact-details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 16px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    border: none;
+}
+
+footer {
+    background-color: #6D727A;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto; /* Asegura que el footer se quede en la parte inferior */
+}
