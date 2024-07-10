@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'users',
     'home',
     'primerpaso',
-    'segundopaso',
 ]
 
 MIDDLEWARE = [
