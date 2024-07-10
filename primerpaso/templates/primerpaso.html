@@ -14,26 +14,27 @@
         <nav>
             <ul>
                 <li><a href="/homeuser">Inicio</a></li>
-                <li><a href="#services">Conoce los temas</a></li>
-                <li><a href="#contact">Acerca del programa</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Aviso de privacidad</a></li>
             </ul>
         </nav>
+        
     </header>
 
     <!-- Imagen con el titulo -->
     <section class="info-section">
         <div class="container">
             <div class="main-content">
-                <img src="{% static 'images/MIS_INTERESES.png' %}" alt="Imagen con fines ilustrativos">
+                <img src="{% static 'images/MIS_INTERESES.png'%}" alt="Imagen con fines ilustrativos">
                 <h2>Mis intereses</h2>
                 <p>Texto ilustrativo con fines gráficos para el estilo y/o diseño de la página.</p>
             </div>
 
             <div class="sidebar">
                 <h2>Autoconocimiento</h2>
-                <a href="/imagen-primer-paso/" class="progress-item-link">
+                <a href="/imagen-primer-paso" class="progress-item-link">
                     <div class="progress-item">
-                        <img src="{% static 'images/IMAGEN.png' %}" alt="Imagen ilustrativa" class="progress-img">
+                        <img src="{% static 'images/IMAGEN.png'%}" alt="Imagen ilustrativa" class="progress-img">
                         <div class="progress-info">
                             <p>Imagen</p>
                             <div class="progress-bar">
@@ -46,7 +47,7 @@
                 </a>
                 <a href="/presentacion-primer-paso" class="progress-item-link">
                     <div class="progress-item">
-                        <img src="{% static 'images/IMAGEN.png' %}" alt="Imagen ilustrativa" class="progress-img">
+                        <img src="{% static 'images/PRESENTACION.png'%}" alt="Imagen ilustrativa" class="progress-img">
                         <div class="progress-info">
                             <p>Presentación</p>
                             <div class="progress-bar">
@@ -58,7 +59,7 @@
                 </a>
                 <a href="/video-primer-paso" class="progress-item-link">
                     <div class="progress-item">
-                        <img src="{% static 'images/IMAGEN.png' %}" alt="Imagen ilustrativa" class="progress-img">
+                        <img src="{% static 'images/VIDEO.png'%}" alt="Imagen ilustrativa" class="progress-img">
                         <div class="progress-info">
                             <p>Video</p>
                             <div class="progress-bar">
@@ -70,7 +71,7 @@
                 </a>
                 <a href="/formato-primer-paso" class="progress-item-link">
                     <div class="progress-item">
-                        <img src="{% static 'images/IMAGEN.png' %}" alt="Imagen ilustrativa" class="progress-img">
+                        <img src="{% static 'images/FORMATO.png'%}" alt="Imagen ilustrativa" class="progress-img">
                         <div class="progress-info">
                             <p>Formato</p>
                             <div class="progress-bar">
@@ -85,8 +86,12 @@
     </section>
 
     <div class="navigation-buttons">
-        <a href="/homeuser" class="btn back-button">Regresar</a>
-        <a href="/imagen-primer-paso/" class="btn continue-button">Continuar</a>
+        <a href="/homeuser">
+            <img src="{% static 'images/Regresar.png'%}" alt="Boton-regresar" class="btn back-button">
+        </a>
+        <a href="/mis-intereses-s2">
+            <img src="{% static 'images/Continuar.png'%}" alt="Boton-continuar" class="btn continue-button">
+        </a>
     </div>
 </body>
 </html>

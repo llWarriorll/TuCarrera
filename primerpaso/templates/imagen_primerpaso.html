@@ -17,12 +17,15 @@
                 <li><a href="#contact">Acerca del programa</a></li>
             </ul>
         </nav>
+        <a href="/primerpaso">
+            <button class="cancel-btn">Salir</button>
+        </a>
     </header>
 
     <div class="content">
         <div class="image-container">
             <h2 class="image-title">Título de la Imagen</h2>
-            <img src="{% static 'images/Mapa.png'%}" alt="Descripción de la imagen" class="displayed-image">
+            <img src="{% static 'images/MapaExample.png'%}" alt="Descripción de la imagen" class="displayed-image">
         </div>
         <div class="controls-container">
             <!-- Aquí puedes agregar otros controles para la imagen si es necesario -->
@@ -30,8 +33,12 @@
     </div>
 
     <div class="navigation-buttons">
-        <a href="/primerpaso" class="btn back-button">Regresar</a>
-        <a href="/presentacion-primer-paso" class="btn continue-button">Continuar</a>
+        <a href="/primerpaso">
+            <img src="{% static 'images/Regresar.png'%}" alt="Boton-regresar" class="btn back-button">
+        </a>
+        <a href="/presentacion-primer-paso">
+            <img src="{% static 'images/Continuar.png'%}" alt="Boton-continuar" class="btn continue-button">
+        </a>
     </div>
 </body>
 </html>

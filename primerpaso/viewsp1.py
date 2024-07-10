@@ -22,3 +22,15 @@ def video_primerpaso(request):
 @login_required
 def formato_primerpaso(request):
     return render(request,'formato_primerpaso.html')
+
+@login_required
+def primerpasos2(request):
+    return render(request,'mis_intereses_s2.html')
+
+@login_required
+def infografia_primerpaso(request):
+    return render(request,'infografia_primerpaso.html')
+
+@login_required
+def test_primerpaso(request):
+    return render(request,'test_primerpaso.html')

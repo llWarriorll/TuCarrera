@@ -4,39 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descargar Formato</title>
-    <link rel="stylesheet" href="{% static 'css/formato_paso1.css' %}">
+    <title>Infografía</title>
+    <link rel="stylesheet" href="{% static 'css/infografia_paso1.css' %}">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <img src="{% static 'images/LOGOS.png' %}" alt="Logo" class="logo">
         <nav>
             <ul>
-                <li><a href="#home">Carrera universitaria</a></li>
+                <li><a href="#home">Inicio</a></li>
                 <li><a href="#services">Conoce los temas</a></li>
                 <li><a href="#contact">Acerca del programa</a></li>
             </ul>
         </nav>
-        <a href="/primerpaso">
+        <a href="/mis-intereses-s2">
             <button class="cancel-btn">Salir</button>
         </a>
     </header>
 
+    <!-- Contenedor de la infografía -->
     <div class="content">
-        <div class="download-container">
-            <h2 class="download-title">Descarga el Formato</h2>
-            <p>Haz clic en el botón de abajo para descargar el formato:</p>
-            <a href="" class="btn download-button" download>Descargar Formato</a>
+        <div class="infografia-container">
+            <h2 class="infografia-title">Infografía</h2>
+            <img src="{% static 'images/Mapa.png' %}" alt="Infografía ilustrativa" class="infografia-img">
         </div>
     </div>
-    
+
     <div class="navigation-buttons">
-        <a href="/video-primer-paso">
+        <a href="/mis-intereses-s2">
             <img src="{% static 'images/Regresar.png'%}" alt="Boton-regresar" class="btn back-button">
         </a>
-        <a href="/mis-intereses-s2">
+        <a href="/test-primer-paso">
             <img src="{% static 'images/Continuar.png'%}" alt="Boton-continuar" class="btn continue-button">
         </a>
     </div>
+
 </body>
 </html>

@@ -80,7 +80,7 @@ header nav ul li a {
     align-items: center;
 }
 
-.image-container {
+.infografia-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,17 +93,14 @@ header nav ul li a {
     margin-bottom: 30px;
 }
 
-.image-title {
+.infografia-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    text-align: center; /* Centra el texto */
-    width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
 }
 
-.displayed-image {
-    width: 900px;
-    height: auto;
+.infografia-img {
+    max-width: 100%;
     border-radius: 12px;
 }
 
@@ -117,10 +114,6 @@ header nav ul li a {
 .nav-button img {
     width: 50px;
     height: 50px;
-}
-
-.controls-container button:hover {
-    background-color: #021f40;
 }
 
 /* Botones de navegación */

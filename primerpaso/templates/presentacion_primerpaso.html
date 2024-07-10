@@ -17,6 +17,9 @@
                 <li><a href="#contact">Acerca del programa</a></li>
             </ul>
         </nav>
+        <a href="/primerpaso">
+            <button class="cancel-btn">Salir</button>
+        </a>
     </header>
 
     <div class="content">
@@ -25,13 +28,16 @@
             <iframe src="" width="900" height="600"></iframe>
         </div>
         <div class="controls-container">
-            <img src="{% static './images/Mapa.png'%}" alt="Descripción de la imagen" class="displayed-image">
         </div>
     </div>
 
     <div class="navigation-buttons">
-        <a href="/imagen-primer-paso" class="btn back-button">Regresar</a>
-        <a href="/video-primer-paso" class="btn continue-button">Continuar</a>
+        <a href="/imagen-primer-paso">
+            <img src="{% static 'images/Regresar.png'%}" alt="Boton-regresar" class="btn back-button">
+        </a>
+        <a href="/video-primer-paso">
+            <img src="{% static 'images/Continuar.png'%}" alt="Boton-continuar" class="btn continue-button">
+        </a>
     </div>
 </body>
 </html>

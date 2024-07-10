@@ -19,6 +19,7 @@ from django.urls import path
 from users import views
 from home import viewsh
 from primerpaso import viewsp1
+from segundopaso import viewsp2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -35,7 +36,9 @@ urlpatterns = [
     path('presentacion-primer-paso/',viewsp1.presentacion_primerpaso, name='presentacion-primer-paso'),
     path('video-primer-paso/',viewsp1.video_primerpaso, name='video-primer-paso'),
     path('formato-primer-paso/',viewsp1.formato_primerpaso, name='formato-primer-paso'),
-    
-    
+    path('mis-intereses-s2/',viewsp1.primerpasos2, name='mis-intereses-s2'),
+    path('infografia-primer-paso/',viewsp1.infografia_primerpaso, name='infografia-primer-paso'),
+    path('test-primer-paso/',viewsp1.test_primerpaso, name='test-primer-paso'),
+    path('segundopaso',viewsp2.segundopaso,name='segundopaso'),
     
 ]

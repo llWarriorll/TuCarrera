@@ -17,6 +17,9 @@
                 <li><a href="#contact">Acerca del programa</a></li>
             </ul>
         </nav>
+        <a href="/primerpaso">
+            <button class="cancel-btn">Salir</button>
+        </a>
     </header>
 
     <div class="content">
@@ -33,8 +36,12 @@
     </div>
 
     <div class="navigation-buttons">
-        <a href="/presentacion-primer-paso" class="btn back-button">Regresar</a>
-        <a href="/formato-primer-paso" class="btn continue-button">Continuar</a>
+        <a href="/presentacion-primer-paso">
+            <img src="{% static 'images/Regresar.png'%}" alt="Boton-regresar" class="btn back-button">
+        </a>
+        <a href="/formato-primer-paso">
+            <img src="{% static 'images/Continuar.png'%}" alt="Boton-continuar" class="btn continue-button">
+        </a>
     </div>
 </body>
 </html>

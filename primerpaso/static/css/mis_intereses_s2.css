@@ -205,16 +205,12 @@ header nav ul li a {
 }
 
 .back-button {
-    margin-right: 20px; /* Añadir espacio entre los botones */
+    margin-right: 40px; /* Añadir espacio entre los botones */
 }
 
 .back-button:hover {
     transition: transform 0.3s;
     transform: scale(1.05);
-}
-
-.continue-button {
-    color: #ffffff;
 }
 
 .continue-button:hover {
