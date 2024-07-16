@@ -56,18 +56,12 @@ header nav ul li a {
 }
 
 .cancel-btn {
-    background-color: #ffffff;
-    color: #242B57;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 22px;
     cursor: pointer;
-    font-weight: bold;
-    margin-right: 50px;
+    width: 150px;
+    margin-right: 70px;
 }
 
 .cancel-btn:hover {
-    background-color: #f9f9f9;
     transform: scale(1.05);
     transition: transform 0.3s;
 }

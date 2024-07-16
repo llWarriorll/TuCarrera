@@ -13,13 +13,13 @@
         <img src="{% static 'images/LOGOS.png' %}" alt="Logo" class="logo">
         <nav>
             <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#services">Conoce los temas</a></li>
-                <li><a href="#contact">Acerca del programa</a></li>
+                <li><a href="/Home/index.html">Inicio</a></li>
+                <li><a href="/Home/index.html">Conoce los temas</a></li>
+                <li><a href="/Home/index.html">Acerca del programa</a></li>
             </ul>
         </nav>
         <a href="/mis-intereses-s2">
-            <button class="cancel-btn">Salir</button>
+            <img src="{% static 'images/Salir.png' %}" alt="Boton-salir" class="cancel-btn">
         </a>
     </header>
 
@@ -460,8 +460,8 @@
 
     <!-- Botones de navegación -->
     <div class="navigation-buttons">
-        <a href="/infografia-primer-paso" id="prevButton" class="btn back-button">Anterior</a>
-        <a href="" id="nextButton" class="btn continue-button">Siguiente</a>
+        <button id="prevButton" class="btn back-button">Anterior</button>
+        <button id="nextButton" class="btn continue-button">Siguiente</button>
         <button type="submit" form="testForm" id="submitButton" class="btn continue-button" style="display:none;">Enviar</button>
     </div>
 
