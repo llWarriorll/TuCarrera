@@ -40,5 +40,11 @@ urlpatterns = [
     path('infografia-primer-paso/',viewsp1.infografia_primerpaso, name='infografia-primer-paso'),
     path('test-primer-paso/',viewsp1.test_primerpaso, name='test-primer-paso'),
     path('segundopaso',viewsp2.segundopaso,name='segundopaso'),
+    path('mis-talentos-s2',viewsp2.segundopaso2,name='mis-talentos-s2'),
+    path('frase-segundo-paso',viewsp2.frase_segundopaso,name='frase-segundo-paso'),
+    path('presentacion-segundo-paso',viewsp2.presentacion_segundopaso,name='presentacion-segundo-paso'),
+    path('test-segundo-paso',viewsp2.test_segundopaso,name='test-segundo-paso'),
+    path('instrucciones-test-segundo-paso',viewsp2.instruccionestest_segundopaso,name='instrucciones-test-segundo-paso'),
+    
     
 ]
