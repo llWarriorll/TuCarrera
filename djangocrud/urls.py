@@ -20,6 +20,7 @@ from users import views
 from home import viewsh
 from primerpaso import viewsp1
 from segundopaso import viewsp2
+from tercerpaso import viewsp3
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -39,12 +40,19 @@ urlpatterns = [
     path('mis-intereses-s2/',viewsp1.primerpasos2, name='mis-intereses-s2'),
     path('infografia-primer-paso/',viewsp1.infografia_primerpaso, name='infografia-primer-paso'),
     path('test-primer-paso/',viewsp1.test_primerpaso, name='test-primer-paso'),
-    path('segundopaso',viewsp2.segundopaso,name='segundopaso'),
-    path('mis-talentos-s2',viewsp2.segundopaso2,name='mis-talentos-s2'),
-    path('frase-segundo-paso',viewsp2.frase_segundopaso,name='frase-segundo-paso'),
-    path('presentacion-segundo-paso',viewsp2.presentacion_segundopaso,name='presentacion-segundo-paso'),
+    path('segundopaso/',viewsp2.segundopaso,name='segundopaso'),
+    path('mis-talentos-s2/',viewsp2.segundopaso2,name='mis-talentos-s2'),
+    path('frase-segundo-paso/',viewsp2.frase_segundopaso,name='frase-segundo-paso'),
+    path('presentacion-segundo-paso/',viewsp2.presentacion_segundopaso,name='presentacion-segundo-paso'),
     path('test-segundo-paso',viewsp2.test_segundopaso,name='test-segundo-paso'),
-    path('instrucciones-test-segundo-paso',viewsp2.instruccionestest_segundopaso,name='instrucciones-test-segundo-paso'),
-    
+    path('instrucciones-test-segundo-paso/',viewsp2.instruccionestest_segundopaso,name='instrucciones-test-segundo-paso'),
+    path('tercerpaso/',viewsp3.tercerpaso, name='tercer-paso'),
+    path('infografia-tercer-paso/',viewsp3.infografia_tercerpaso, name='infografia-tercer-paso'),
+    path('mi-entorno-s2/',viewsp3.mi_entorno_s2, name='mi-entorno-s2'),
+    path('tablero-interactivo-tercer-paso/',viewsp3.tablero_tercerpaso, name='tablero-interactivo-tercer-paso'),
+    path('video-tercer-paso/',viewsp3.video_tercerpaso, name='video-tercer-paso'),
+    path('mi-entorno-s3/',viewsp3.mi_entorno_s3, name='mi-entorno-s3'),
+    path('video-consejo-tercer-paso/',viewsp3.video_consejo_tercerpaso, name='video-consejo-tercer-paso'),
+
     
 ]

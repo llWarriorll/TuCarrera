@@ -5,7 +5,6 @@ from django.contrib.auth import login, logout, authenticate
 from django.db import IntegrityError
 from django.contrib.auth.decorators import login_required, user_passes_test
 
-
 from .models import Profile
 
 # Create your views here.

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis talentos seccion 2</title>
-    <link rel="stylesheet" href="{% static 'css/segundo_paso.css' %}">
+    <title>Mi entorno seccion 2</title>
+    <link rel="stylesheet" href="{% static 'css/mi_entorno_s2.css' %}">
 </head>
 <body>
     <!-- Header -->
@@ -24,19 +24,19 @@
     <section class="info-section">
         <div class="container">
             <div class="main-content">
-                <img src="{% static 'images/MIS_INTERESES.png'%}" alt="Imagen con fines ilustrativos">
-                <h2>Mis talentos</h2>
+                <img src="{% static 'images/Entorno.png'%}" alt="Imagen con fines ilustrativos">
+                <h2>Mi entorno</h2>
                 <p>Texto ilustrativo con fines gráficos para el estilo y/o diseño de la página.</p>
             </div>
 
             <div class="sidebar">
-                <h2>Intereses profesionales</h2>
+                <h2>Inventario de carreras</h2>
 
-                <a href="/instrucciones-test-segundo-paso" class="progress-item-link">
+                <a href="/tablero-interactivo-tercer-paso" class="progress-item-link">
                     <div class="progress-item">
-                        <img src="{% static 'images/Test.png'%}" alt="Imagen ilustrativa" class="progress-img">
+                        <img src="{% static 'images/IMAGEN.png'%}" alt="Imagen ilustrativa" class="progress-img">
                         <div class="progress-info">
-                            <p>Test de intereses profesionales</p>
+                            <p>Tablero interactivo</p>
                             <div class="progress-bar">
                                 <div class="progress" style="width: 85%;"></div>
                             </div>
@@ -46,15 +46,28 @@
                     </div>
                 </a>
 
+                <a href="/video-tercer-paso" class="progress-item-link">
+                    <div class="progress-item">
+                        <img src="{% static 'images/IMAGEN.png'%}" alt="Imagen ilustrativa" class="progress-img">
+                        <div class="progress-info">
+                            <p>Video</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 45%;"></div>
+                            </div>
+                            <span>45% completado</span>
+                        </div>
+                    </div>
+                </a>
+
             </div>
         </div>
     </section>
 
     <div class="navigation-buttons">
-        <a href="/segundopaso">
+        <a href="/tercerpaso">
             <img src="{% static 'images/Regresar.png'%}" alt="Boton-regresar" class="back-button">
         </a>
-        <a href="/tercerpaso">
+        <a href="/mi-entorno-s3">
             <img src="{% static 'images/Continuar.png'%}" alt="Boton-continuar" class="continue-button">
         </a>
     </div>

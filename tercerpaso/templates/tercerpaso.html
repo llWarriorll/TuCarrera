@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis talentos seccion 2</title>
-    <link rel="stylesheet" href="{% static 'css/segundo_paso.css' %}">
+    <title>Mi entorno seccion 1</title>
+    <link rel="stylesheet" href="{% static 'css/tercerpaso.css' %}">
 </head>
 <body>
     <!-- Header -->
@@ -13,7 +13,7 @@
         <img src="{% static 'images/LOGOS.png' %}" alt="Logo" class="logo">
         <nav>
             <ul>
-                <li><a href="/homeuser">Inicio</a></li>
+                <li><a href="/Home/index.html">Inicio</a></li>
                 <li><a href="/Home/index.html">Conoce los temas</a></li>
                 <li><a href="/Home/index.html">Acerca del programa</a></li>
             </ul>
@@ -24,19 +24,18 @@
     <section class="info-section">
         <div class="container">
             <div class="main-content">
-                <img src="{% static 'images/MIS_INTERESES.png'%}" alt="Imagen con fines ilustrativos">
-                <h2>Mis talentos</h2>
+                <img src="{% static 'images/Entorno.png'%}" alt="Imagen con fines ilustrativos">
+                <h2>Mi entorno</h2>
                 <p>Texto ilustrativo con fines gráficos para el estilo y/o diseño de la página.</p>
             </div>
 
             <div class="sidebar">
-                <h2>Intereses profesionales</h2>
-
-                <a href="/instrucciones-test-segundo-paso" class="progress-item-link">
+                <h2>Competencias del siglo XXI</h2>
+                <a href="/infografia-tercer-paso" class="progress-item-link">
                     <div class="progress-item">
-                        <img src="{% static 'images/Test.png'%}" alt="Imagen ilustrativa" class="progress-img">
+                        <img src="{% static 'images/IMAGEN.png'%}" alt="Imagen ilustrativa" class="progress-img">
                         <div class="progress-info">
-                            <p>Test de intereses profesionales</p>
+                            <p>Infografia</p>
                             <div class="progress-bar">
                                 <div class="progress" style="width: 85%;"></div>
                             </div>
@@ -45,16 +44,15 @@
                         </div>
                     </div>
                 </a>
-
             </div>
         </div>
     </section>
 
     <div class="navigation-buttons">
-        <a href="/segundopaso">
+        <a href="/mis-talentos-s2">
             <img src="{% static 'images/Regresar.png'%}" alt="Boton-regresar" class="back-button">
         </a>
-        <a href="/tercerpaso">
+        <a href="/mi-entorno-s2">
             <img src="{% static 'images/Continuar.png'%}" alt="Boton-continuar" class="continue-button">
         </a>
     </div>
