@@ -22,6 +22,8 @@ from primerpaso import viewsp1
 from segundopaso import viewsp2
 from tercerpaso import viewsp3
 from cuartopaso import viewsp4
+from quintopaso import viewsp5
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -60,6 +62,14 @@ urlpatterns = [
     path('tablero-cuarto-paso/',viewsp4.tablero_cuartopaso, name='tablero-cuarto-paso'),
     path('video-cuarto-paso/',viewsp4.video_cuartopaso, name='video-cuarto-paso'),
     path('agenda-cuarto-paso/',viewsp4.agenda_cuartopaso, name='agenda-cuarto-paso'),
+    path('quintopaso/', viewsp5.quintopaso, name='quintopaso'),
+    path('mis-apoyos-s2/', viewsp5.mis_apoyos_s2, name='mis-apoyos-s2'),
+    path('mis-apoyos-s3/', viewsp5.mis_apoyos_s3, name='mis-apoyos-s3'),
+    path('imagen-quinto-paso/', viewsp5.imagen_quintopaso, name='imagen-quinto-paso'),
+    
+    
+    
+    
     
     
     
